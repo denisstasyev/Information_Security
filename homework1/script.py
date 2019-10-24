@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Please write url!")
+    if len(sys.argv) != 3:
+        print("Use command 'python3 script.py <url> <command>' to run!")
         sys.exit(0)
 
     url = 'http://localhost:8080/'
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     # Send ping
     data = {
-        'ip': sys.argv[1],
+        'ip': sys.argv[1] + ' && ' + sys.argv[2],
         'Submit': 'Submit',
         'user_token': token,
     }
