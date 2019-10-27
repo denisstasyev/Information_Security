@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Homework 3
+
+## Task
+Написать веб скрипт с XSS уязвимостью. Реализовать защиту от этой атаки.
+
+## Environment
+Чтобы запустить скрипт необходимо наличие npm:
+
+1. npm install
+2. npm start
+
+P.S. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
