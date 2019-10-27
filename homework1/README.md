@@ -14,7 +14,7 @@
 2. docker run -d -p 8080:80 citizenstig/dvwa
 
 3. docker container ls
-4. docker stop {CONTAINER ID}
+4. docker stop &lt;CONTAINER ID&gt;
 
 5. docker images
-6. docker image rm -f {IMAGE ID} 
+6. docker image rm -f &lt;IMAGE ID&gt;
