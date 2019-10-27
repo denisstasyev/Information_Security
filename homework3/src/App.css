@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App-output {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.App-input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.App-output-value {
+  margin: 20px;
+}
+
+.App-output__withXSS {
+  flex: 50%;
+  background: rgb(255,91,91);
+  background: linear-gradient(0deg, rgba(255,91,91,1) 0%, rgba(255,143,96,1) 100%);
+}
+
+.App-output__withoutXSS {
+  flex: 50%;
+  background: rgb(91,255,92);
+  background: linear-gradient(0deg, rgba(91,255,92,1) 0%, rgba(96,255,193,1) 100%);
+}
