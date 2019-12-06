@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from "./app.module.scss";
 
 const sanitize = string => {
   const map = {
@@ -19,22 +19,22 @@ const App = () => {
   const [value, setValue] = React.useState("");
 
   return (
-    <div className="App">
-      <div className="App-output">
-        <div className="App-output__withXSS">
-          <div className="App-output-value">
+    <div className={styles["app"]}>
+      <div className={styles["app-output"]}>
+        <div className={styles["app-output__with-xss"]}>
+          <div className={styles["app-output-value"]}>
             <h1>Text with XSS</h1>
             <div dangerouslySetInnerHTML={{__html: value}}/>
           </div>
         </div>
-        <div className="App-output__withoutXSS">
-          <div className="App-output-value">
+        <div className={styles["app-output__without-xss"]}>
+          <div className={styles["app-output-value"]}>
             <h1>Text without XSS</h1>
             <div dangerouslySetInnerHTML={{__html: sanitize(value)}}/>
           </div>
         </div>
       </div>
-      <input className="App-input" type="text" placeholder="Enter text" value={value} onChange={(event) => {setValue(event.target.value)}} />
+      <input className={styles["app-input"]} type="text" placeholder="Enter text" value={value} onChange={(event) => {setValue(event.target.value)}} />
     </div>
   );
 };

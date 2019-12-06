@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-output {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-size: $size-font;
+}
+
+.app-input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: $size-font;
+}
+
+.app-output-value {
+  margin: 20px;
+}
+
+.app-output__with-xss {
+  flex: 50%;
+  background: linear-gradient(0deg, $color-danger 0%, $color-danger-light 100%);
+
+  &:hover {
+    background: $color-danger;
+  }
+
+}
+
+.app-output__without-xss {
+  flex: 50%;
+  background: linear-gradient(0deg, $color-safety 0%, $color-safety-light 100%);
+
+  &:hover {
+    background: $color-safety;
+  }
+}
+
